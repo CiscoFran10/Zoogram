@@ -77,6 +77,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.profile-img::after {
+  content: "";
   border-radius: 50%;
   width: 235px;
   height: 235px;
@@ -88,6 +93,14 @@ img {
     #d6249f 60%,
     #285aeb 90%
   );
+  position: absolute;
+  animation: rotate 3s infinite linear;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .profile-img img {
@@ -96,6 +109,7 @@ img {
   object-fit: cover;
   border-radius: 50%;
   position: relative;
+  z-index: 4;
 }
 
 .grid-title {
