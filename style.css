@@ -83,8 +83,8 @@ img {
 .profile-img::after {
   content: "";
   border-radius: 50%;
-  width: 235px;
-  height: 235px;
+  width: 234px;
+  height: 234px;
   background: linear-gradient(
     to right,
     #fdf497 0%,
@@ -94,7 +94,7 @@ img {
     #285aeb 90%
   );
   position: absolute;
-  animation: rotate 3s infinite linear;
+  animation: rotate 4s infinite linear;
 }
 
 @keyframes rotate {
