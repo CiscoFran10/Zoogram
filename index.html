@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Slide</title>
+</head>
+
+<body>
+  <main class="container">
+    <div class="profile">
+      <div class="profile-img"><img src="./img/img1.jpg" alt=""></div>
+      <div class="profile-info">
+        <h1>Girafa Jonhnson</h1>
+        <ul class="stats">
+          <li><span class="stats-number">252</span>publicações</li>
+          <li><span class="stats-number">17.7K</span>seguidores</li>
+          <li><span class="stats-number">62</span>seguindo</li>
+        </ul>
+        <p class="bio">That moment when you realize you're bigger than your problems!</p>
+        <a href="https://www.linkedin.com/in/francisco-th-rodrigues/"><img class="svg" src="./img/linkedin.svg" alt="linkedin"> Follow me on Linkedin</a>
+      </div>
+    </div>
+    <h2 class="grid-title"><span class="svg"><img src="./img/grid_on_FILL0_wght400_GRAD0_opsz48.svg" alt=""></span> Publicações</h2>
+    <div class="grid">
+      <img src="./img/img1.jpg" alt="img1">
+      <img src="./img/img2.jpg" alt="img2">
+      <img src="./img/img3.jpg" alt="img3">
+      <img src="./img/img4.jpg" alt="img4">
+    </div>
+  </main>
+
+  <div id="slide-container" class="slide-container">
+    <div data-slide="slide" class="slide">
+      <div class="slide-items">
+        <img src="./img/img1.jpg" alt="img1">
+        <img src="./img/img2.jpg" alt="img2">
+        <img src="./img/img3.jpg" alt="img3">
+        <img src="./img/img4.jpg" alt="img4">
+      </div>
+      <nav class="slide-nav">
+        <div class="slide-thumb"></div>
+        <button class="slide-prev">Anterior</button>
+        <button class="slide-next">Proximo</button>
+      </nav>
+    </div>
+    <button class="close-btn"></button>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
