@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--primary: #111;
+	--secondary-100: #dbdbdb;
+	--secondary-200: #b2b2b2;
+
+	--accent-100: #4496ee;
+	--accent-200: #0e76a8;
+	--accent-300: #285aeb;
+	--accent-400: #00376b;
+
+	--light: #fff;
+	--bg: #c9d6ff;
+	--gradient: linear-gradient(to right, #e2e2e2, #c9d6ff);
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+	background: var(--bg);
+	background: var(--gradient);
+
+	font-family: "Poppins";
+}
+
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+	outline: none;
+}
+
+.svg {
+	width: 22px;
+	pointer-events: none;
+}
+
+.container {
+	width: min(1060px, 95%);
+	margin: 40px 20px;
+	background-color: var(--light);
+	border-radius: 15px;
+}
